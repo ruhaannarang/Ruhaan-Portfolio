@@ -133,11 +133,12 @@ a {
 }
 
 #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: "inter";
     font-weight: 600;
-    position: relative;
-    top: 20vh;
     font-size: xx-large;
 }
 
