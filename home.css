@@ -130,6 +130,7 @@ a {
     width: 100%;
     position: static;
     background-color: rgb(24, 24, 24);
+    overflow-y: none;
     /* display: grid; */
     /* grid-template-columns: 30vw 60vw; */
     /* padding: 100px 0; */
@@ -148,6 +149,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    min-height: calc(100vh+500px);
 }
 .firstHalf{
     width: 450px;
