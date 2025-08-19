@@ -4,6 +4,7 @@
     scrollbar-width: none;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: "inter";
 }
 body{
     background-color: black;
@@ -125,7 +126,7 @@ a {
     } */
 
 .secondpage {
-    min-height: 10vh;
+    min-height: 100vh;
     width: 100%;
     position: static;
     background-color: lightgray;
@@ -133,7 +134,69 @@ a {
     /* grid-template-columns: 30vw 60vw; */
     /* padding: 100px 0; */
 }
+.aboutTitle{
+    margin-top: 60px;
+    color: black;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+.secondPageContent{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.firstHalf{
+    color: white;
+    background-color: black;
+    margin-left: 30px;
+    border-radius: 40px;
+}
 
+.education{
+    /* margin-left: 60px; */
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#educationTitle{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.grade{
+    margin: 20px 0 0px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.school{
+    font-weight: 800;
+    font-size: large;
+}
+.mypic{
+    margin: 40px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 50%; */
+    /* border: 1px solid black; */
+}
+.pic{
+    /* border-radius: 50%;
+     */
+     
+     border-top-left-radius: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 50%;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
 /* #about {
     display: flex;
     justify-content: center;
