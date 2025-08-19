@@ -5,7 +5,9 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
+body{
+    background-color: black;
+}
 .firstpage {
     background-color: black;
     position: static;
@@ -127,12 +129,12 @@ a {
     width: 100%;
     position: static;
     background-color: lightgray;
-    display: grid;
-    grid-template-columns: 30vw 60vw;
-    padding: 100px 0;
+    /* display: grid; */
+    /* grid-template-columns: 30vw 60vw; */
+    /* padding: 100px 0; */
 }
 
-#about {
+/* #about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,13 +152,12 @@ a {
     font-size: xx-large;
 
     /* top: 12vh; */
-}
 
 .thirdpage {
     height: 100vh;
     width: 100%;
     position: static;
-
+    background-color: white;
 }
 
 #thirdpagephoto {
@@ -230,22 +231,26 @@ a {
 }
 
 .forthpage {
-    height: 100vh;
+    padding: 50px;
+    min-height: 100vh;
     width: 100%;
     background-color: black;
-    display: grid;
-    grid-template-areas: "PROJECT projcts";
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-areas: "PROJECT projcts"; */
 
 }
 
 .PROJECTS {
     color: white;
-    grid-area: PROJECT;
+    /* grid-area: PROJECT; */
     font-family: "inter";
     font-size: 3.5rem;
-    position: relative;
+    padding: 20px;
+    /* position: relative;
     left: 5vw;
-    top: 15vh;
+    top: 15vh; */
     height: 20vh;
 }
 
@@ -266,14 +271,16 @@ a {
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
+    max-width: 360px;
 }
 
 .pdescription {
     font-weight: 100;
+    flex-direction: row;
 }
 
 .fifthpage {
-    height: min-content;
+    height: 100vh;
     width: 100%;
     position: relative;
 
@@ -384,8 +391,24 @@ a {
 .projectLink{
     color: white;
     text-decoration: underline;
+    font-weight: 400;
 }
 
+#linkemoji{
+    text-decoration: none;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.video{
+    border: 3px solid white;
+    border-radius: 20px;
+    /* width:310px; */
+}
 
 @media screen and (max-width:1000px) {
     * {
@@ -771,5 +794,13 @@ a {
 
     .handles {
         color: black;
+    }
+    .project{
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    video{
+        width: 300px;
     }
 }
