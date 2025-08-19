@@ -129,25 +129,28 @@ a {
     min-height: 100vh;
     width: 100%;
     position: static;
-    background-color: lightgray;
+    background-color: rgb(24, 24, 24);
     /* display: grid; */
     /* grid-template-columns: 30vw 60vw; */
     /* padding: 100px 0; */
 }
 .aboutTitle{
     margin-top: 60px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
+    text-shadow: rgba(130, 129, 129, 0.563) 2px 3px 2px;
 }
 .secondPageContent{
     margin-top: 50px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 .firstHalf{
+    width: 450px;
     color: white;
     background-color: black;
     margin-left: 30px;
@@ -161,19 +164,23 @@ a {
     border-radius: 20px;
     padding: 30px;
 }
+.schooling{
+    /* width: 550px; */
+}
 
 #educationTitle{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 .grade{
     margin: 20px 0 0px 0;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
 }
 .school{
-    font-weight: 800;
+    /* font-weight: 550; */
     font-size: large;
+    /* width: 500px; */
 }
 .mypic{
     margin: 40px;
@@ -187,15 +194,49 @@ a {
     border-top-right-radius: 50%; */
     /* border: 1px solid black; */
 }
-.pic{
-    /* border-radius: 50%;
-     */
-     
-     border-top-left-radius: 100%;
+
+#mrKnit{
+    border-top-left-radius: 100%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 50%;
-    /* border: 2px solid rgb(255, 255, 255); */
+}
+#msrit{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 100%;
+}
+
+.secondHalf{
+    width: 450px;
+    color: white;
+    background-color: black;
+    margin-left: 30px;
+    border-radius: 40px;
+    position: relative;
+    top: 150px;
+
+}
+.collegeName{
+    margin-top: 40px;
+    font-size: 1.8rem;
+}
+
+.thirdHalf{
+    width: 450px;
+    color: white;
+    background-color: black;
+    margin-left: 30px;
+    border-radius: 40px;
+    position: relative;
+    top: 50px;
+}
+#myPhoto{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
 }
 /* #about {
     display: flex;
