@@ -6,9 +6,11 @@
     overflow-x: hidden;
     font-family: "inter";
 }
-body{
+
+body {
     background-color: black;
 }
+
 .firstpage {
     background-color: black;
     position: static;
@@ -126,16 +128,20 @@ a {
     } */
 
 .secondpage {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    /* min-height: calc(190vh); */
     width: 100%;
     position: static;
-    background-color: rgb(24, 24, 24);
+    /* background-color: rgb(24, 24, 24); */
+    /* border-top: 1px solid white; */
+    background-color: black;
     overflow-y: none;
     /* display: grid; */
     /* grid-template-columns: 30vw 60vw; */
     /* padding: 100px 0; */
 }
-.aboutTitle{
+
+.aboutTitle {
     margin-top: 60px;
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -143,48 +149,56 @@ a {
     text-align: center;
     text-shadow: rgba(130, 129, 129, 0.563) 2px 3px 2px;
 }
-.secondPageContent{
+
+.secondPageContent {
     margin-top: 50px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     gap: 50px;
-    min-height: calc(100vh+500px);
-}
-.firstHalf{
-    width: 450px;
-    color: white;
-    background-color: black;
-    margin-left: 30px;
-    border-radius: 40px;
+    /* min-height:83vh; */
+    justify-content: space-evenly;
 }
 
-.education{
+.firstHalf {
+    width: 450px;
+    color: white;
+    background-color:black;
+    /* margin-left: 30px; */
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.education {
     /* margin-left: 60px; */
     margin-top: 30px;
     border: 2px solid black;
     border-radius: 20px;
     padding: 30px;
 }
-.schooling{
+
+.schooling {
     /* width: 550px; */
 }
 
-#educationTitle{
+#educationTitle {
     font-size: 2rem;
     font-weight: 400;
 }
-.grade{
+
+.grade {
     margin: 20px 0 0px 0;
     font-size: 1rem;
     font-weight: 300;
 }
-.school{
+
+.school {
     /* font-weight: 550; */
     font-size: large;
     /* width: 500px; */
 }
-.mypic{
+
+.mypic {
     margin: 40px;
     /* width: 100%; */
     display: flex;
@@ -197,44 +211,49 @@ a {
     /* border: 1px solid black; */
 }
 
-#mrKnit{
+#mrKnit {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 50%;
 }
-#msrit{
+
+#msrit {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 100%;
 }
 
-.secondHalf{
+.secondHalf {
     width: 450px;
     color: white;
-    background-color: black;
-    margin-left: 30px;
+    background-color:black;
+    /* margin-left: 30px; */
     border-radius: 40px;
     position: relative;
     top: 150px;
+    border: 2px solid white;
 
 }
-.collegeName{
+
+.collegeName {
     margin-top: 40px;
     font-size: 1.8rem;
 }
 
-.thirdHalf{
+.thirdHalf {
     width: 450px;
     color: white;
-    background-color: black;
-    margin-left: 30px;
+    background-color:black;
+    /* margin-left: 30px; */
     border-radius: 40px;
     position: relative;
     top: 50px;
+    border: 2px solid white;
 }
-#myPhoto{
+
+#myPhoto {
     object-fit: cover;
     border-radius: 50%;
     height: 350px;
@@ -261,10 +280,10 @@ a {
     /* top: 12vh; */
 
 .thirdpage {
-    height: 100vh;
+    min-height: max-content;
     width: 100%;
     position: static;
-    background-color: white;
+    background-color: #141414;
 }
 
 #thirdpagephoto {
@@ -277,14 +296,18 @@ a {
 }
 
 .side {
-    display: grid;
+    /* display: grid; */
     height: 100vh;
     width: 60vw;
     float: right;
-    grid-template-areas: "title title"
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* grid-template-areas: "title title"
         "head1  detail1"
         "head2 detail2"
-        "head3 detail3";
+        "head3 detail3"; */
     font-family: "inter";
     align-items: center;
     /* justify-items: center; */
@@ -304,6 +327,9 @@ a {
     position: relative;
     left: 10vw;
 
+}
+#chatgpt{
+    filter: invert();
 }
 
 .head2 {
@@ -495,26 +521,78 @@ a {
     color: black;
 }
 
-.projectLink{
+.projectLink {
     color: white;
     text-decoration: underline;
     font-weight: 400;
 }
 
-#linkemoji{
+#linkemoji {
     text-decoration: none;
 }
 
-.project{
+.project {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.video{
+
+.video {
     border: 3px solid white;
     border-radius: 20px;
     /* width:310px; */
+}
+
+.use {
+    /* position: relative; */
+    /* top: 700px; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-size: 3rem;
+    text-shadow: black 3px 3px 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.gridcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills {
+    /* position: relative;
+    top: 750px;
+    ; */
+    display: grid;
+    /* width: 30vw; */
+    /* width: 100%; */
+    grid-template-areas: "cc css html py ai git ts"
+        "rct java js db prog google c";
+        /* box-sizing: border-box; */
+    column-gap: 70px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+
+.skills {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.skills:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:1000px) {
@@ -635,14 +713,38 @@ a {
         min-height: 10vh;
         width: 100vw;
         position: static;
-        background-color: lightgray;
+        /* background-color: lightgray; */
         display: flex;
         flex-direction: column;
         /* display: grid;
         grid-template-columns: 30vw 60vw; */
-        padding: 100px 0;
+        /* padding: px 0; */
         align-items: center;
+        background-color: black;
+        border-top: 1px solid white;
 
+    }
+
+    .secondPageContent {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .firstHalf {
+        width: 100vw;
+        border: 0px;
+    }
+
+    .secondHalf {
+        width: 100vw;
+        top: 0px;
+        border: 0px;
+    }
+
+    .thirdHalf {
+        width: 100vw;
+        top: 0px;
+        border: 0px;
     }
 
     #about {
@@ -668,29 +770,34 @@ a {
     }
 
     .thirdpage {
-        height: 100vh;
+        padding: 50px 0px;
+        /* height: 120vh; */
+        min-height: max-content;
         width: 100vw;
         position: static;
-        background-color: white;
+        background-color: rgb(22, 22, 22);
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        /* margin: 50px 0; */
 
     }
 
     #thirdpagephoto {
-        height: 100vh;
-        width: 0;
+        /* height: 100vh;
+        width: 0; */
         display: none;
     }
 
     .side {
-        border: 2px solid black;
+        /* border: 2px solid black; */
+        height: 120vh;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
         width: 100vw;
         align-items: center;
-        justify-content: center;
+        /* justify-content: space-evenly; */
         gap: 50px;
     }
 
@@ -902,12 +1009,35 @@ a {
     .handles {
         color: black;
     }
-    .project{
+
+    .project {
         gap: 30px;
         flex-direction: column;
         text-align: center;
     }
-    video{
+
+    video {
         width: 300px;
+    }
+    .Skills{
+        height: calc(fit-content) ;
+        grid-template-areas: "css html"
+        "py ai"
+        "git java"
+        "js db"
+        "prog google";
+        /* justify-content: space-between; */
+        overflow: visible;
+        z-index: 2;
+
+
+
+    }
+    .use{
+        /* box-sizing: border-box;
+         */
+         display: block;
+         font-size: 2rem;
+         margin: 10px 5px 0 5px;
     }
 }
