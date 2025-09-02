@@ -280,7 +280,8 @@ a {
     /* top: 12vh; */
 
 .thirdpage {
-    min-height: max-content;
+    /* min-height: max-content; */
+    /* height: 100vh; */
     width: 100%;
     position: static;
     background-color: #141414;
@@ -568,8 +569,7 @@ a {
     top: 750px;
     ; */
     display: grid;
-    /* width: 30vw; */
-    /* width: 100%; */
+    height: max-content;
     grid-template-areas: "cc css html py ai git ts"
         "rct java js db prog google c";
         /* box-sizing: border-box; */
@@ -581,6 +581,8 @@ a {
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    overflow: hidden;
+    padding: 20px;
 
 }
 
