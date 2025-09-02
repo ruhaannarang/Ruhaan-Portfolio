@@ -603,7 +603,7 @@ a {
     z-index: 1000;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: 5px;
     border: 2px solid rgb(97, 97, 97);
     transition-property: transform;
     transition-duration: 0.2s;
@@ -614,7 +614,7 @@ a {
 .myResume:hover{
     transform: scale(1.1);
     color: rgb(255, 255, 255);
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(30, 29, 29);
     border: 2px solid black;
 }
 
