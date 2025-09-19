@@ -5,10 +5,26 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "inter";
+    cursor: none;
 }
 
 body {
     background-color: black;
+    z-index: 1;
+}
+/* .gap1{
+    height: 200px; */
+/* } */
+.cursor{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+   box-shadow: rgba(255, 254, 254, 0.753) 5px 3px 70px 15px;
+    /* box-shadow:white 10px 5px 2px 5px; */
 }
 
 .firstpage {
@@ -90,6 +106,7 @@ body {
 
 .workbutton {
     border: 2px solid gray;
+    z-index: 5;
     height: 8vh;
     width: 25vw;
     position: absolute;
@@ -158,6 +175,7 @@ a {
     gap: 50px;
     /* min-height:83vh; */
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .firstHalf {
@@ -231,8 +249,8 @@ a {
     background-color:black;
     /* margin-left: 30px; */
     border-radius: 40px;
-    position: relative;
-    top: 150px;
+    /* position: relative;
+    top: 150px; */
     border: 2px solid white;
 
 }
@@ -248,8 +266,8 @@ a {
     background-color:black;
     /* margin-left: 30px; */
     border-radius: 40px;
-    position: relative;
-    top: 50px;
+    /* position: relative;
+    top: 150px; */
     border: 2px solid white;
 }
 
@@ -425,7 +443,7 @@ a {
     height: 100vh;
     object-fit: cover;
     /* position: absolute; */
-    z-index: 0;
+    z-index: 3;
     display: block;
     width: 100%;
     height: 100%;
@@ -439,7 +457,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
     font-family: "inter";
     position: absolute;
     /* bottom: 60vh; */
@@ -519,14 +537,27 @@ a {
 }
 
 .handles {
+    position: relative;
     color: black;
+    z-index: 50;
+    background-color: lightgray;
 }
 
 .projectLink {
+    /* padding: 15px; */
     color: white;
     text-decoration: underline;
     font-weight: 400;
+    position: relative;
+    z-index: 50;
+    background-color: black;
+    
 }
+/* .projectLink:hover{
+    transform: scale(2);
+    z-index: 50;
+    background-color: black;
+} */
 
 #linkemoji {
     text-decoration: none;
@@ -587,10 +618,12 @@ a {
 }
 
 .skills {
+    z-index: 5;
     transition-property: transform;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    background-color: #141414;
 }
 
 .skills:hover {
@@ -615,8 +648,10 @@ a {
 
 .myResume:hover{
     transform: scale(1.1);
-    color: rgb(255, 255, 255);
-    background-color: rgb(30, 29, 29);
+    /* color: rgb(255, 255, 255); */
+    /* background-color: rgb(30, 29, 29); */
+    color: black;
+    background-color: white;
     border: 2px solid black;
 }
 
@@ -937,7 +972,7 @@ a {
         height: auto;
         object-fit: cover;
         /* position: absolute; */
-        z-index: 0;
+        z-index: 3;
 
     }
 
@@ -1053,7 +1088,7 @@ a {
         "prog google";
         /* justify-content: space-between; */
         overflow: visible;
-        z-index: 2;
+        z-index: 3;
 
 
 
