@@ -623,7 +623,7 @@ a {
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
-    background-color: #141414;
+    /* background-color: #141414; */
 }
 
 .skills:hover {
