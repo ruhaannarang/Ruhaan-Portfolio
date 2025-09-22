@@ -5,12 +5,13 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "inter";
-    cursor: none;
+    
 }
 
 body {
     background-color: black;
     z-index: 1;
+    cursor: none;
 }
 /* .gap1{
     height: 200px; */
@@ -550,7 +551,7 @@ a {
     font-weight: 400;
     position: relative;
     z-index: 50;
-    background-color: black;
+    /* background-color: black; */
     
 }
 /* .projectLink:hover{
@@ -1099,5 +1100,8 @@ a {
          display: block;
          font-size: 2rem;
          margin: 10px 5px 0 5px;
+    }
+    .cursor{
+        display: none;
     }
 }
