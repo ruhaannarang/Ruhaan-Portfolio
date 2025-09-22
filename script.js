@@ -257,3 +257,18 @@ gsap.fromTo("#firstProject",
 
   }
 )
+
+gsap.fromTo(".skills",
+  {y:"-50%",opacity:"0"},
+  {
+    y:"0",opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:".skills",
+      scrub:"true",
+      start:"top 90%",
+      end:"top 30%",
+      // dragger:"0.2",
+      toggleActions:"restart reset restart reset"
+    }
+  })

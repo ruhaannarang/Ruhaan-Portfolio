@@ -614,12 +614,12 @@ a {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     overflow: hidden;
-    padding: 20px;
+    padding: 40px;
 
 }
 
 .skills {
-    z-index: 5;
+    z-index: 10;
     transition-property: transform;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
