@@ -258,17 +258,30 @@ gsap.fromTo("#firstProject",
   }
 )
 
-gsap.fromTo(".skills",
-  {y:"-50%",opacity:"0"},
-  {
-    y:"0",opacity:"1",
-    duration:"2",
-    scrollTrigger:{
-      trigger:".skills",
-      scrub:"true",
-      start:"top 90%",
-      end:"top 30%",
-      // dragger:"0.2",
-      toggleActions:"restart reset restart reset"
-    }
-  })
+// gsap.fromTo(".skills",
+//   {y:"-50%",opacity:"0"},
+//   {
+//     y:"0",opacity:"1",
+//     duration:"2",
+//     scrollTrigger:{
+//       trigger:".skills",
+//       scrub:"true",
+//       start:"top 90%",
+//       end:"top 30%",
+//       // dragger:"0.2",
+//       toggleActions:"restart reset restart reset"
+//     }
+//   })
+// const skills = document.querySelectorAll(".skills");
+// skills.forEach(box =>{
+
+//   box.addEventListener("mouseenter", () => {
+//     gsap.to(box, { scale: 1.2, zIndex:10 });
+//   });
+  
+//   box.addEventListener("mouseleave", () => {
+//     gsap.to(box, { scale: 1, zIndex:1 });
+//   });
+// }
+
+// )
