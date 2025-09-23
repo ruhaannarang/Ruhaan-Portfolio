@@ -120,6 +120,22 @@ gsap.fromTo(".thirdHalf",
     scrollTrigger:{
       trigger:".thirdHalf",
       start:"top 20%",
+      // end:"top 10%",
+      toggleActions:"restart reset restart reset",
+      scrub:"true"
+    }
+
+  }
+)
+gsap.fromTo(".thirdpage",
+  {opacity:"0"},
+  {
+    opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:".thirdpage",
+      start:"top 50%",
+      end:"top 10%",
       toggleActions:"restart reset restart reset",
       scrub:"true"
     }
@@ -127,19 +143,19 @@ gsap.fromTo(".thirdHalf",
   }
 )
 
-gsap.fromTo("#thirdpagephoto",
-  {x:"-40%",opacity:"0"},
-  {
-    x:"0",opacity:"1",
-    duration:"2",
-    scrollTrigger:{
-      trigger:"#thirdpagephoto",
-      scrub:"true",
-      start:"top 90%",
-      end:"top 30%",
-      toggleActions:"restart reset restart reset"
-    }
-  })
+// gsap.fromTo("#thirdpagephoto",
+//   {x:"-40%",opacity:"0"},
+//   {
+//     x:"0",opacity:"1",
+//     duration:"2",
+//     scrollTrigger:{
+//       trigger:"#thirdpagephoto",
+//       scrub:"true",
+//       start:"top 90%",
+//       end:"top 30%",
+//       toggleActions:"restart reset restart reset"
+//     }
+//   })
 
   gsap.fromTo(".side",
   {x:"-40%",opacity:"0"},
@@ -285,3 +301,31 @@ gsap.fromTo("#firstProject",
 // }
 
 // )
+
+gsap.fromTo(".socials",
+  {x:"40%",opacity:"0"},
+  {
+    x:"0",opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:".socials",
+      scrub:"true",
+      start:"top 90%",
+      end:"top 30%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
+
+  gsap.fromTo(".box",
+  {x:"-40%",opacity:"0"},
+  {
+    x:"0",opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:".box",
+      scrub:"true",
+      start:"top 90%",
+      end:"top 30%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
