@@ -46,29 +46,29 @@ socialLinks.addEventListener("mouseout",() => {
 });
 
 gsap.registerPlugin(ScrollTrigger) 
-gsap.fromTo("#firstpagephoto",
+gsap.fromTo(".firstpage",
   {opacity:"0"},
   {opacity:"1",
     duration:"2",
     scrollTrigger:{
-    trigger:"#firstpagephoto",
+    trigger:".firstpage",
     toggleActions:"play none none none"
   }}
   
 )
 
-gsap.fromTo(".fpleft",
-  {opacity:"0"},
-  {
-    opacity:"1",
-    duration:"2",
-    // stagger:"0.1",
-    scrollTrigger:{
-    trigger:"#firstpagephoto",
-    toggleActions:"play none none none"
-  }
-  }
-)
+// gsap.fromTo(".firstInfo",
+//   {opacity:"0"},
+//   {
+//     opacity:"1",
+//     duration:"2",
+//     // stagger:"0.1",
+//     scrollTrigger:{
+//     trigger:"#firstpagephoto",
+//     toggleActions:"play none none none"
+//   }
+//   }
+// )
 gsap.fromTo(".aboutTitle",
   {opacity:"0"},
   {
@@ -92,6 +92,7 @@ gsap.fromTo(".firstHalf",
     scrollTrigger:{
       trigger:".firstHalf",
       start:"top 70%",
+      end:"top 30%",
       toggleActions:"restart reset restart reset",
       scrub:"true"
     }
@@ -104,8 +105,9 @@ gsap.fromTo(".secondHalf",
     opacity:"1",
     duration:"2",
     scrollTrigger:{
-      trigger:".secondHalf",
+      trigger:".firstHalf",
       start:"top 50%",
+      end:"top 30%",
       toggleActions:"restart reset restart reset",
       scrub:"true"
     }
@@ -118,9 +120,10 @@ gsap.fromTo(".thirdHalf",
     opacity:"1",
     duration:"2",
     scrollTrigger:{
-      trigger:".thirdHalf",
-      start:"top 20%",
-      // end:"top 10%",
+      trigger:".firstHalf",
+      start:"top 30%",
+      end:"top 15%",
+      // end:"top 50%",
       toggleActions:"restart reset restart reset",
       scrub:"true"
     }
