@@ -5,7 +5,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "inter";
-    
+
 }
 
 body {
@@ -13,10 +13,11 @@ body {
     z-index: 1;
     cursor: none;
 }
+
 /* .gap1{
     height: 200px; */
 /* } */
-.cursor{
+.cursor {
     position: fixed;
     height: 20px;
     width: 20px;
@@ -24,7 +25,7 @@ body {
     border-radius: 50%;
     z-index: 2;
     background-color: rgb(0, 0, 0);
-   box-shadow: rgba(255, 254, 254, 0.753) 5px 3px 70px 15px;
+    box-shadow: rgba(255, 254, 254, 0.753) 5px 3px 70px 15px;
     /* box-shadow:white 10px 5px 2px 5px; */
 }
 
@@ -33,6 +34,8 @@ body {
     position: static;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -60,17 +63,27 @@ body {
 
 }
 
+.firstInfo {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
 .name {
     /* border: 2px solid white; */
     /* height: 35vh; */
-    width: 33vw;
-    position: absolute;
+    /* width: 33vw; */
+    /* position: absolute; */
     display: flex;
     align-items: center;
+    margin: 0 25px;
     /* justify-content: center; */
     flex-direction: column;
-    top: 7vw;
-    left: 8.5vw;
+    /* top: 7vw;
+    left: 8.5vw; */
 
 }
 
@@ -92,14 +105,16 @@ body {
 
 .discription {
     /* border: 2px solid white; */
-    height: 20vh;
-    width: 33vw;
-    position: absolute;
+    /* height: 20vh;
+    width: 33vw; */
+    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 52vh;
+    margin: 0 25px;
+    /* top: 52vh;
     left: 8.5vw;
+} */
 }
 
 #discrip {
@@ -111,12 +126,12 @@ body {
     z-index: 5;
     height: 8vh;
     width: 25vw;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 80vh;
-    left: 12.5vw;
+    /* top: 80vh;
+    left: 12.5vw; */
     transition-property: transform;
     transition-duration: 0.2s;
     transition-delay: 0.1s;
@@ -183,7 +198,7 @@ a {
 .firstHalf {
     width: 450px;
     color: white;
-    background-color:black;
+    background-color: black;
     /* margin-left: 30px; */
     border-radius: 40px;
     border: 2px solid white;
@@ -248,7 +263,7 @@ a {
 .secondHalf {
     width: 450px;
     color: white;
-    background-color:black;
+    background-color: black;
     /* margin-left: 30px; */
     border-radius: 40px;
     /* position: relative;
@@ -265,7 +280,7 @@ a {
 .thirdHalf {
     width: 450px;
     color: white;
-    background-color:black;
+    background-color: black;
     /* margin-left: 30px; */
     border-radius: 40px;
     /* position: relative;
@@ -349,7 +364,8 @@ a {
     left: 10vw;
 
 }
-#chatgpt{
+
+#chatgpt {
     filter: invert();
 }
 
@@ -553,8 +569,9 @@ a {
     position: relative;
     z-index: 50;
     /* background-color: black; */
-    
+
 }
+
 /* .projectLink:hover{
     transform: scale(2);
     z-index: 50;
@@ -605,7 +622,7 @@ a {
     height: max-content;
     grid-template-areas: "cc css html py ai git ts"
         "rct java js db prog google c";
-        /* box-sizing: border-box; */
+    /* box-sizing: border-box; */
     column-gap: 70px;
     row-gap: 50px;
     align-items: center;
@@ -632,7 +649,7 @@ a {
     transform: scale(1.2);
 }
 
-.myResume{
+.myResume {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -648,7 +665,7 @@ a {
     transition-timing-function: ease-in;
 }
 
-.myResume:hover{
+.myResume:hover {
     transform: scale(1.1);
     /* color: rgb(255, 255, 255); */
     /* background-color: rgb(30, 29, 29); */
@@ -657,7 +674,7 @@ a {
     border: 2px solid black;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1025px) {
     * {
         padding: 0px;
         margin: 0px;
@@ -675,11 +692,12 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 50px;
     }
 
     #firstpagephoto {
-        position: relative;
-        top: -110px;
+        /* position: relative; */
+        /* top: -110px; */
         height: 30vh;
         width: 30vh;
         border-radius: 50%;
@@ -697,14 +715,23 @@ a {
         font-size: 3rem;
         /* display: flex; */
         text-align: center;
-        left: 0;
+        /* left: 0; */
 
 
     }
 
+    .firstInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .name {
         /* border: 2px solid white; */
-        width: 100vw;
+        /* width: 100vw; */
+        /* margin: 10px; */
 
         /* display: flex;
         align-items: center;
@@ -713,21 +740,22 @@ a {
         /* gap: 0px; */
         font-size: 1rem;
         text-align: center;
-        left: 0;
+        /* left: 0; */
 
     }
 
 
 
 
-    .discription {
+    .discriptionbox{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 20px;
         /* position: relative; */
-        left: 0;
-        padding: 10px;
+        /* left: 0; */
+        /* padding: 10px; */
 
     }
 
@@ -737,11 +765,12 @@ a {
 
     .workbutton {
         border: 2px solid gray;
-        height: 10vh;
-        width: 80vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        padding: 10px 40px;
+        /* display: flex; */
+        /* align-items: center;
+        justify-content: center; */
+        width: 70%;
         transition-property: transform;
         transition-duration: 0.2s;
         transition-delay: 0.1s;
@@ -1081,13 +1110,14 @@ a {
     video {
         width: 300px;
     }
-    .Skills{
-        height: calc(fit-content) ;
+
+    .Skills {
+        height: calc(fit-content);
         grid-template-areas: "css html"
-        "py ai"
-        "git java"
-        "js db"
-        "prog google";
+            "py ai"
+            "git java"
+            "js db"
+            "prog google";
         /* justify-content: space-between; */
         overflow: visible;
         z-index: 3;
@@ -1095,14 +1125,16 @@ a {
 
 
     }
-    .use{
+
+    .use {
         /* box-sizing: border-box;
          */
-         display: block;
-         font-size: 2rem;
-         margin: 10px 5px 0 5px;
+        display: block;
+        font-size: 2rem;
+        margin: 10px 5px 0 5px;
     }
-    .cursor{
+
+    .cursor {
         display: none;
     }
 }
