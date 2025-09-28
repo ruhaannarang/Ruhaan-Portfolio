@@ -7,6 +7,9 @@
     font-family: "inter";
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: black;
@@ -28,7 +31,34 @@ body {
     box-shadow: rgba(255, 254, 254, 0.753) 5px 3px 70px 15px;
     /* box-shadow:white 10px 5px 2px 5px; */
 }
-
+.navbar{
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid white;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    z-index: 5000;
+}
+.navItems{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 15px;
+    margin-right: 15px;
+}
+.navItems a li{
+    color: white;
+}
+.navName{
+    color: white;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-left:15px;
+}
 .firstpage {
     background-color: black;
     position: static;

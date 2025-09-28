@@ -45,6 +45,27 @@ socialLinks.addEventListener("mouseout",() => {
   
 });
 
+
+
+
+let navitems=document.querySelector(".navItems")
+
+navitems.addEventListener("mouseover",() => {
+  cursor.style.display="none"
+  document.body.style.cursor = "auto"; 
+});
+
+
+
+navitems.addEventListener("mouseout",() => {
+  cursor.style.display="block"
+  document.body.style.cursor = "none"; 
+  
+});
+
+
+
+
 gsap.registerPlugin(ScrollTrigger) 
 gsap.fromTo(".firstpage",
   {opacity:"0"},
