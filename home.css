@@ -33,8 +33,8 @@ body {
 }
 .navbar{
     display: flex;
-    background-color: black;
-    border-bottom: 1px solid white;
+    background-color: white;
+    /* border-bottom: 1px solid ; */
     flex-direction: row;
     justify-content: space-between;
     position: static;
@@ -42,19 +42,20 @@ body {
     align-items: center;
     width: 100%;
     z-index: 5000;
+    opacity: 0.8;
 }
 .navItems{
     display: flex;
-    color: white;
+    color: black;
     align-items: center;
     gap: 15px;
     margin-right: 15px;
 }
 .navItems a li{
-    color: white;
+    color: black;
 }
 .navName{
-    color: white;
+    color: black;
     font-weight: 400;
     padding: 10px 0;
     margin-left:15px;
