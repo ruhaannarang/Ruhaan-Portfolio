@@ -1168,4 +1168,13 @@ a {
     .cursor {
         display: none;
     }
+    
+    .navbar{
+        /* padding: 0px; */
+        display: none;
+    }
+    /* .navItems{
+        display: flex;
+        flex-direction: column;
+    } */
 }
