@@ -7,7 +7,8 @@
     font-family: "inter";
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -31,7 +32,8 @@ body {
     box-shadow: rgba(255, 254, 254, 0.753) 5px 3px 70px 15px;
     /* box-shadow:white 10px 5px 2px 5px; */
 }
-.navbar{
+
+.navbar {
     display: flex;
     background-color: white;
     /* border-bottom: 1px solid ; */
@@ -44,22 +46,26 @@ body {
     z-index: 5000;
     opacity: 0.8;
 }
-.navItems{
+
+.navItems {
     display: flex;
     color: black;
     align-items: center;
     gap: 15px;
     margin-right: 15px;
 }
-.navItems a li{
+
+.navItems a li {
     color: black;
 }
-.navName{
+
+.navName {
     color: black;
     font-weight: 400;
     padding: 10px 0;
-    margin-left:15px;
+    margin-left: 15px;
 }
+
 .firstpage {
     background-color: black;
     position: static;
@@ -645,24 +651,24 @@ a {
     justify-content: center;
     align-items: center;
     /* height: 10; */
-    
+
 }
 
 .Skills {
-   padding: 50px 100px;
-   display: flex;
-   /* width: 80%; */
-   /* flex-direction: column; */
-   gap: 60px;
-   /* height: 300%; */
-   /* flex-wrap: wrap; */
-   /* gap: 50px; */
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   
-   /* align-content: space-evenly; */
-   /* height: 30%; */
+    padding: 50px 100px;
+    display: flex;
+    /* width: 80%; */
+    /* flex-direction: column; */
+    gap: 60px;
+    /* height: 300%; */
+    /* flex-wrap: wrap; */
+    /* gap: 50px; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* align-content: space-evenly; */
+    /* height: 30%; */
 
 }
 
@@ -777,7 +783,7 @@ a {
 
 
 
-    .discriptionbox{
+    .discriptionbox {
         width: 100%;
         display: flex;
         align-items: center;
@@ -1140,12 +1146,14 @@ a {
     video {
         width: 300px;
     }
-    .skills{
+
+    .skills {
         width: 50px;
     }
+
     .Skills {
-        
-gap: 50px;
+
+        gap: 50px;
 
 
     }
@@ -1161,16 +1169,17 @@ gap: 50px;
     .cursor {
         display: none;
     }
-    
-    .navbar{
+
+    .navbar {
         /* padding: 0px; */
         display: none;
     }
+
     /* .navItems{
         display: flex;
         flex-direction: column;
     } */
-     body{
+    body {
         cursor: default;
-     }
+    }
 }
