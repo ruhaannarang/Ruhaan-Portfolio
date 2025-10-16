@@ -365,12 +365,13 @@ a {
 .side {
     /* display: grid; */
     height: 100vh;
-    width: 60vw;
-    float: right;
+    width: 100%;
+    /* float: right; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* justify-content: space-evenly; */
     /* grid-template-areas: "title title"
         "head1  detail1"
         "head2 detail2"
@@ -643,27 +644,25 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 10; */
+    
 }
 
 .Skills {
-    /* position: relative;
-    top: 750px;
-    ; */
-    display: grid;
-    height: max-content;
-    grid-template-areas: "cc css html py ai git ts"
-        "rct java js db prog google c";
-    /* box-sizing: border-box; */
-    column-gap: 70px;
-    row-gap: 50px;
-    align-items: center;
-    justify-content: center;
-    transition-property: transform;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    overflow: hidden;
-    padding: 40px;
+   padding: 50px 100px;
+   display: flex;
+   /* width: 80%; */
+   /* flex-direction: column; */
+   gap: 60px;
+   /* height: 300%; */
+   /* flex-wrap: wrap; */
+   /* gap: 50px; */
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+   /* align-content: space-evenly; */
+   /* height: 30%; */
 
 }
 
@@ -913,7 +912,7 @@ a {
 
     .side {
         /* border: 2px solid black; */
-        height: 120vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         /* height: 100vh; */
@@ -1141,18 +1140,12 @@ a {
     video {
         width: 300px;
     }
-
+    .skills{
+        width: 50px;
+    }
     .Skills {
-        height: calc(fit-content);
-        grid-template-areas: "css html"
-            "py ai"
-            "git java"
-            "js db"
-            "prog google";
-        /* justify-content: space-between; */
-        overflow: visible;
-        z-index: 3;
-
+        
+gap: 50px;
 
 
     }
@@ -1177,4 +1170,7 @@ a {
         display: flex;
         flex-direction: column;
     } */
+     body{
+        cursor: default;
+     }
 }
