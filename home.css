@@ -283,6 +283,10 @@ a {
     /* border: 1px solid black; */
 }
 
+.mypic .pic {
+    object-fit: cover;
+}
+
 #mrKnit {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 50%;
@@ -1148,7 +1152,7 @@ a {
     }
 
     .skills {
-        width: 50px;
+        width: 70px;
     }
 
     .Skills {

@@ -48,20 +48,20 @@ socialLinks.addEventListener("mouseout",() => {
 
 
 
-let navitems=document.querySelector(".navItems")
+// let navitems=document.querySelector(".navItems")
 
-navitems.addEventListener("mouseover",() => {
-  cursor.style.display="none"
-  document.body.style.cursor = "auto"; 
-});
+// navitems.addEventListener("mouseover",() => {
+//   cursor.style.display="none"
+//   document.body.style.cursor = "auto"; 
+// });
 
 
 
-navitems.addEventListener("mouseout",() => {
-  cursor.style.display="block"
-  document.body.style.cursor = "none"; 
+// navitems.addEventListener("mouseout",() => {
+//   cursor.style.display="block"
+//   document.body.style.cursor = "none"; 
   
-});
+// });
 
 
 
@@ -78,18 +78,6 @@ gsap.fromTo(".firstpage",
   
 )
 
-// gsap.fromTo(".firstInfo",
-//   {opacity:"0"},
-//   {
-//     opacity:"1",
-//     duration:"2",
-//     // stagger:"0.1",
-//     scrollTrigger:{
-//     trigger:"#firstpagephoto",
-//     toggleActions:"play none none none"
-//   }
-//   }
-// )
 gsap.fromTo(".aboutTitle",
   {opacity:"0"},
   {
@@ -97,9 +85,8 @@ gsap.fromTo(".aboutTitle",
     duration:"2",
     scrollTrigger:{
       trigger:".aboutTitle",
-      // start:"bottom 100px",
       toggleActions:"restart none repeat none",
-      scrub:"true"
+      scrub:1
     }
 
   }
@@ -115,7 +102,7 @@ gsap.fromTo(".firstHalf",
       start:"top 70%",
       end:"top 30%",
       toggleActions:"restart reset restart reset",
-      scrub:"true"
+      scrub:1
     }
 
   }
@@ -130,7 +117,7 @@ gsap.fromTo(".secondHalf",
       start:"top 50%",
       end:"top 30%",
       toggleActions:"restart reset restart reset",
-      scrub:"true"
+      scrub:1
     }
 
   }
@@ -146,7 +133,7 @@ gsap.fromTo(".thirdHalf",
       end:"top 15%",
       // end:"top 50%",
       toggleActions:"restart reset restart reset",
-      scrub:"true"
+      scrub:1
     }
 
   }
@@ -161,25 +148,12 @@ gsap.fromTo(".thirdpage",
       start:"top 50%",
       end:"top 10%",
       toggleActions:"restart reset restart reset",
-      scrub:"true"
+      scrub:1
     }
 
   }
 )
 
-// gsap.fromTo("#thirdpagephoto",
-//   {x:"-40%",opacity:"0"},
-//   {
-//     x:"0",opacity:"1",
-//     duration:"2",
-//     scrollTrigger:{
-//       trigger:"#thirdpagephoto",
-//       scrub:"true",
-//       start:"top 90%",
-//       end:"top 30%",
-//       toggleActions:"restart reset restart reset"
-//     }
-//   })
 
   gsap.fromTo(".side",
   {x:"-40%",opacity:"0"},
@@ -188,40 +162,13 @@ gsap.fromTo(".thirdpage",
     duration:"2",
     scrollTrigger:{
       trigger:"#thirdpagephoto",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
     }
   })
 
-  // gsap.to("#thirdpagephoto",
-  // {x:"0",opacity:"1"},
-  // {
-  //   x:"100%",opacity:"0",
-  //   duration:"1",
-  //   scrollTrigger:{
-  //     trigger:"#thirdpagephoto",
-  //     scrub:"true",
-  //     start:"bottom 30%",
-  //     end:"bottom 10%",
-  //     toggleActions:"restart reset restart reset"
-  //   }
-  // })
-
-  // gsap.to(".side",
-  // {x:"0%",opacity:"0"},
-  // {
-  //   x:"100%",opacity:"1",
-  //   duration:"1",
-  //   scrollTrigger:{
-  //     trigger:"#thirdpagephoto",
-  //     scrub:"true",
-  //     start:"bottom 30%",
-  //     end:"bottom 90%",
-  //     toggleActions:"restart reset restart reset"
-  //   }
-  // })
 
   gsap.fromTo(".PROJECTS",
   {opacity:"0",x:"-400px"},
@@ -234,7 +181,7 @@ gsap.fromTo(".thirdpage",
       // start:"bottom 100px",
       end:"top 50%",
       toggleActions:"restart none repeat none",
-      scrub:"true"
+      scrub:1
     }
 
   }
@@ -247,7 +194,7 @@ gsap.fromTo("#firstProject",
     duration:"2",
     scrollTrigger:{
       trigger:"#firstProject",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
@@ -261,7 +208,7 @@ gsap.fromTo("#firstProject",
     duration:"2",
     scrollTrigger:{
       trigger:"#secondProject",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
@@ -275,7 +222,7 @@ gsap.fromTo("#firstProject",
     duration:"2",
     scrollTrigger:{
       trigger:"#thirdProject",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
@@ -292,39 +239,12 @@ gsap.fromTo("#firstProject",
       // start:"bottom 100px",
       // end:"top 50%",
       toggleActions:"restart none repeat none",
-      scrub:"true"
+      scrub:1
     }
 
   }
 )
 
-// gsap.fromTo(".skills",
-//   {y:"-50%",opacity:"0"},
-//   {
-//     y:"0",opacity:"1",
-//     duration:"2",
-//     scrollTrigger:{
-//       trigger:".skills",
-//       scrub:"true",
-//       start:"top 90%",
-//       end:"top 30%",
-//       // dragger:"0.2",
-//       toggleActions:"restart reset restart reset"
-//     }
-//   })
-// const skills = document.querySelectorAll(".skills");
-// skills.forEach(box =>{
-
-//   box.addEventListener("mouseenter", () => {
-//     gsap.to(box, { scale: 1.2, zIndex:10 });
-//   });
-  
-//   box.addEventListener("mouseleave", () => {
-//     gsap.to(box, { scale: 1, zIndex:1 });
-//   });
-// }
-
-// )
 
 gsap.fromTo(".socials",
   {x:"40%",opacity:"0"},
@@ -333,7 +253,7 @@ gsap.fromTo(".socials",
     duration:"2",
     scrollTrigger:{
       trigger:".socials",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
@@ -347,7 +267,7 @@ gsap.fromTo(".socials",
     duration:"2",
     scrollTrigger:{
       trigger:".box",
-      scrub:"true",
+      scrub:1,
       start:"top 90%",
       end:"top 30%",
       toggleActions:"restart reset restart reset"
