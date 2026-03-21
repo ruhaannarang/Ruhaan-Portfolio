@@ -228,6 +228,19 @@ gsap.fromTo("#firstProject",
       toggleActions:"restart reset restart reset"
     }
   })
+   gsap.fromTo("#fifthProject",
+  {x:"90%",opacity:"0"},
+  {
+    x:"0",opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:"#fifthProject",
+      scrub:1,
+      start:"top 90%",
+      end:"top 30%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
 
   gsap.fromTo("#thirdProject",
   {x:"90%",opacity:"0"},
