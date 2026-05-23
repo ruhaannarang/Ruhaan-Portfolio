@@ -92,13 +92,57 @@ gsap.fromTo(".aboutTitle",
   }
 )
 
+// gsap.fromTo(".firstHalf",
+//   {opacity:"0"},
+//   {
+//     opacity:"1",
+//     duration:"2",
+//     scrollTrigger:{
+//       trigger:".firstHalf",
+//       start:"top 70%",
+//       end:"top 30%",
+//       toggleActions:"restart reset restart reset",
+//       scrub:1
+//     }
+
+//   }
+// )
 gsap.fromTo(".firstHalf",
-  {opacity:"0"},
+  {
+    opacity: 0,
+    z: -400,
+    scale: 0.5
+  },
+  {
+    opacity: 1,
+    z: 0,
+    scale: 1,
+    duration: 2,
+    ease: "power3.out",
+
+    scrollTrigger:{
+      trigger: ".firstHalf",
+      start: "top 90%",
+      end: "top 30%",
+      toggleActions: "restart reset restart reset",
+      scrub: 1
+    }
+  }
+)
+
+gsap.fromTo(".secondHalf",
+  {opacity:"0",
+    z:-400,
+    scale:0.5
+  },
   {
     opacity:"1",
+    z:0,
+    scale:1,
     duration:"2",
+    ease:"power3.out",
     scrollTrigger:{
-      trigger:".firstHalf",
+      trigger:".secondHalf",
       start:"top 70%",
       end:"top 30%",
       toggleActions:"restart reset restart reset",
@@ -107,29 +151,20 @@ gsap.fromTo(".firstHalf",
 
   }
 )
-gsap.fromTo(".secondHalf",
-  {opacity:"0"},
-  {
-    opacity:"1",
-    duration:"2",
-    scrollTrigger:{
-      trigger:".firstHalf",
-      start:"top 50%",
-      end:"top 30%",
-      toggleActions:"restart reset restart reset",
-      scrub:1
-    }
-
-  }
-)
 gsap.fromTo(".thirdHalf",
-  {opacity:"0"},
+  {opacity:"0",
+    z:-400,
+    scale:0.5
+  },
   {
     opacity:"1",
+    z:0,
+    scale:1,
     duration:"2",
+    ease:"power3.out",
     scrollTrigger:{
-      trigger:".firstHalf",
-      start:"top 30%",
+      trigger:".thirdHalf",
+      start:"top 50%",
       end:"top 15%",
       // end:"top 50%",
       toggleActions:"restart reset restart reset",
