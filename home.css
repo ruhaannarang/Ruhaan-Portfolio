@@ -863,7 +863,9 @@ a {
         /* padding: 10px; */
 
     }
-
+    .orb{
+        display: none;
+    }
     #discrip {
         font-size: 1.8rem;
     }
