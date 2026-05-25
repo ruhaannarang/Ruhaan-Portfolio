@@ -173,36 +173,6 @@ gsap.fromTo(".thirdHalf",
 
   }
 )
-gsap.fromTo(".thirdpage",
-  {opacity:"0"},
-  {
-    opacity:"1",
-    duration:"2",
-    scrollTrigger:{
-      trigger:".thirdpage",
-      start:"top 50%",
-      end:"top 10%",
-      toggleActions:"restart reset restart reset",
-      scrub:1
-    }
-
-  }
-)
-
-
-  gsap.fromTo(".side",
-  {x:"-40%",opacity:"0"},
-  {
-    x:"0",opacity:"1",
-    duration:"2",
-    scrollTrigger:{
-      trigger:"#thirdpagephoto",
-      scrub:1,
-      start:"top 90%",
-      end:"top 30%",
-      toggleActions:"restart reset restart reset"
-    }
-  })
 
 
   gsap.fromTo(".PROJECTS",
@@ -221,6 +191,76 @@ gsap.fromTo(".thirdpage",
 
   }
 )
+  gsap.fromTo(".use",
+  {opacity:"0"},
+  {
+    opacity:"1",
+    duration:"1",
+    scrollTrigger:{
+      trigger:".use",
+      toggleActions:"restart none repeat none",
+      scrub:1
+    }
+
+  }
+)
+
+gsap.fromTo(".skilldept1",
+  {x:"50%",opacity:"0",scale:"0"},
+  {
+    x:"0",opacity:"1",
+    scale:1,
+    duration:"1",
+    scrollTrigger:{
+      trigger:".langs",
+      scrub:1,
+      start:"top 90%",
+      end:"top 60%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
+gsap.fromTo(".skilldept2",
+  {x:"-50%",opacity:"0",scale:"0"},
+  {
+    x:"0",opacity:"1",
+    scale:1,
+    duration:"1",
+    scrollTrigger:{
+      trigger:".web",
+      scrub:1,
+      start:"top 90%",
+      end:"top 60%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
+gsap.fromTo(".skilldept3",
+  {x:"50%",opacity:"0",scale:"0"},
+  {
+    x:"0",opacity:"1",
+    scale:1,
+    duration:"1",
+    scrollTrigger:{
+      trigger:".aitech",
+      scrub:1,
+      start:"top 90%",
+      end:"top 60%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
+gsap.fromTo(".skilldept4",
+  {x:"-50%",opacity:"0",scale:"0"},
+  {
+    x:"0",opacity:"1",
+    scale:1,
+    duration:"1",
+    scrollTrigger:{
+      trigger:".others",
+      scrub:1,
+      start:"top 90%",
+      end:"top 60%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
 
 gsap.fromTo("#firstProject",
   {x:"90%",opacity:"0"},
