@@ -99,7 +99,9 @@ body {
 
 
 }
+.normal{
 
+}
 .firstInfo {
     width: 50vw;
     display: flex;
@@ -202,7 +204,7 @@ a {
     /* min-height: 100vh; */
     /* min-height: calc(190vh); */
     width: 100%;
-    position: static;
+    position: relative;
     /* background-color: rgb(24, 24, 24); */
     /* border-top: 1px solid white; */
     background-color: black;
@@ -468,6 +470,18 @@ a {
     bottom: 50%;
     left:10%;
 }
+.orb5{
+    background: #3b82f6;
+    bottom: 20%;
+    right:30%;
+}
+
+.orb6{
+    background: #a855f7;
+    bottom: 40%;
+    left:20%;
+}
+
 
 @keyframes float{
     0%{
@@ -680,7 +694,10 @@ a {
     border-radius: 20px;
     /* width:310px; */
 }
-
+.phone{
+    display: none;
+    font-size: 1.5rem;
+}
 .use {
     /* position: relative; */
     /* top: 700px; */
@@ -734,7 +751,9 @@ a {
 .skills:hover {
     transform: scale(1.2);
 }
-
+.phoneskill{
+    display:none;
+}
 .myResume {
     position: fixed;
     bottom: 30px;
@@ -950,94 +969,7 @@ a {
         /* top: 12vh; */
     }
 
-    .thirdpage {
-        padding: 50px 0px;
-        /* height: 120vh; */
-        min-height: max-content;
-        width: 100vw;
-        position: static;
-        background-color: rgb(22, 22, 22);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* margin: 50px 0; */
-
-    }
-
-    #thirdpagephoto {
-        /* height: 100vh;
-        width: 0; */
-        display: none;
-    }
-
-    .side {
-        /* border: 2px solid black; */
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        /* height: 100vh; */
-        width: 100vw;
-        align-items: center;
-        /* justify-content: space-evenly; */
-        gap: 50px;
-    }
-
-    .p3title {
-
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .head1 {
-
-        font-size: 1.5rem;
-        color: gray;
-        left: 0;
-
-
-
-    }
-
-    .head2 {
-
-        font-size: 1.5rem;
-        color: gray;
-        left: 0;
-        top: 60px;
-
-    }
-
-    .head3 {
-
-        font-size: 1.5rem;
-        color: gray;
-        left: 0;
-        top: 120px;
-        text-align: center;
-    }
-
-    .detail1 {
-        text-align: center;
-        position: relative;
-        bottom: 230px;
-        font-size: 1.4rem;
-    }
-
-    .detail2 {
-        text-align: center;
-        font-size: 1.4rem;
-        position: relative;
-        bottom: 200px;
-    }
-
-    .detail3 {
-        position: relative;
-        bottom: 130px;
-        font-size: 1.4rem;
-        text-align: center;
-    }
-
+    
     .forthpage {
         min-height: 100vh;
         width: 100vw;
@@ -1070,7 +1002,37 @@ a {
 
 
     }
-
+    .phoneskill{
+        display:block;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .skilldepts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skilltitle{
+        font-size:2rem;
+        color: white;
+        text-align: center;
+        width:100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .normal{
+        display: none;
+    }
     .pname {
         font-size: xx-large;
         margin-top: 20px;
@@ -1216,7 +1178,7 @@ a {
         /* box-sizing: border-box;
          */
         display: block;
-        font-size: 2rem;
+        font-size: 4rem;
         margin: 10px 5px 0 5px;
     }
 
