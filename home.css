@@ -5,6 +5,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "inter";
+    user-select: none;
 
 }
 
