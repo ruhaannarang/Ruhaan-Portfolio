@@ -628,15 +628,19 @@ a {
 .phone {
     font-weight: 500;
     font-size: 1rem;
+    color: black;
 }
 
 .num {
     font-weight: 600;
+    color: black;
 
 }
 
 .mail {
     font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
 }
 
 .email {
@@ -696,8 +700,13 @@ a {
     /* width:310px; */
 }
 .phone{
-    display: none;
-    font-size: 1.5rem;
+    
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+
+    display: block;
+    /* font-size: 1.5rem; */
 }
 .use {
     /* position: relative; */

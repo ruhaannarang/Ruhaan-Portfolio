@@ -45,6 +45,34 @@ socialLinks.addEventListener("mouseout",() => {
   
 });
 
+let mail=document.querySelector(".mail")
+mail.addEventListener("mouseover",() => {
+  cursor.style.display="none"
+  document.body.style.cursor = "auto"; 
+});
+
+
+
+mail.addEventListener("mouseout",() => {
+  cursor.style.display="block"
+  document.body.style.cursor = "none"; 
+  
+});
+let num=document.querySelector(".num")
+num.addEventListener("mouseover",() => {
+  cursor.style.display="none"
+  document.body.style.cursor = "auto"; 
+});
+
+
+
+num.addEventListener("mouseout",() => {
+  cursor.style.display="block"
+  document.body.style.cursor = "none"; 
+  
+});
+
+
 
 
 
@@ -323,6 +351,19 @@ gsap.fromTo("#firstProject",
     duration:"2",
     scrollTrigger:{
       trigger:"#fifthProject",
+      scrub:1,
+      start:"top 90%",
+      end:"top 30%",
+      toggleActions:"restart reset restart reset"
+    }
+  })
+   gsap.fromTo("#seventhProject",
+  {x:"90%",opacity:"0"},
+  {
+    x:"0",opacity:"1",
+    duration:"2",
+    scrollTrigger:{
+      trigger:"#seventhProject",
       scrub:1,
       start:"top 90%",
       end:"top 30%",
